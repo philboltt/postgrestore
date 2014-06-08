@@ -2,9 +2,9 @@
 //
 // It is heavily influenced by
 //
-//  * redistore - https://github.com/boj/redistore
-//  * mysqlstore - https://github.com/srinathgs/mysqlstore
-//  * pgstore  - https://github.com/antonlindstrom/pgstore  (removes the dependenct on gorp from pgstore  in the spirit of limiting dependencies)
+// * redistore - https://github.com/boj/redistore
+// * mysqlstore - https://github.com/srinathgs/mysqlstore
+// * pgstore  - https://github.com/antonlindstrom/pgstore  (removes the dependenct on gorp from pgstore  in the spirit of limiting dependencies)
 package postgrestore
 
 import (
