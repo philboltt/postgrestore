@@ -1,10 +1,12 @@
 // postgrestore is a PostgreSQL backend for storing Gorilla Web Toolkit sessions.
 //
-// It is heavily influenced by
+// It is heavily influenced by:
 //
-// * redistore - https://github.com/boj/redistore
-// * mysqlstore - https://github.com/srinathgs/mysqlstore
-// * pgstore  - https://github.com/antonlindstrom/pgstore  (removes the dependenct on gorp from pgstore  in the spirit of limiting dependencies)
+//  * redistore - https://github.com/boj/redistore
+//  * mysqlstore - https://github.com/srinathgs/mysqlstore
+//  * pgstore  - https://github.com/antonlindstrom/pgstore
+//
+// Removes the dependency on gorp from pgstore  in the spirit of limiting dependencies
 package postgrestore
 
 import (
