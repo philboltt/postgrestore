@@ -133,6 +133,11 @@ func (dbStore *PGStore) New(r *http.Request, name string) (*sessions.Session, er
 			err = dbStore.load(session)
 			if err == nil {
 				session.IsNew = false
+			} else if err == sql.ErrNoRows || err.Error() == "Session expired" {
+				// found a matching cookie, but no valid session in the db OR
+				// the session has actually expired -
+				// treat either case as expired and just create a new session
+				err = nil
 			}
 		}
 	}
